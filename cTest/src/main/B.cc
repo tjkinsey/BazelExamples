@@ -9,13 +9,13 @@
     }
 
     std::string B::getFirstName(){
-        return B::firstName;
+        return firstName;
     }
 
     std::string B::getLastName(){
-        return B::lastName;
+        return lastName;
     }   
     
     int B::getAge(){
-        return B::age;
+        return age;
     }
