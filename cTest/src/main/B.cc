@@ -2,7 +2,7 @@
 
 
     bool B::isOld(){
-        if(B::age > 25){
+        if(B::age > 75){
             return 1;
         }
         return 0;
