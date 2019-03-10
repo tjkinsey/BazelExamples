@@ -4,8 +4,6 @@ void isCarCool(C);
 
 int main(){
     C c(1971, "Chevrolet", "Camero");
-    std::cout << c.isCool() << "\n";
-    std::cout << c.getModel() << "\n";
     isCarCool(c);
     return 0;
 }
