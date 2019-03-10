@@ -1,6 +1,5 @@
 #include "B.h"
 
-
     bool B::isOld(){
         if(B::age > 75){
             return 1;
