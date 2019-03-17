@@ -1,6 +1,6 @@
 java_import(
     name = "junit",
-    jars = [ "junit-4.13-beta-2.jar" ]
+    jars = [ "junitLinker.jar" ]
 )
 
 java_library(
