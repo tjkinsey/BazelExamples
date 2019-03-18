@@ -1,14 +1,17 @@
-#include "B.h"
-void isCarCool(C);
-
+#include "Person.h"
+void isCarCool(Car);
 
 int main(){
-    C c(1971, "Chevrolet", "Camero");
-    isCarCool(c);
+    Car car1(1971, "Chevrolet", "Camero");
+    Person alpha("Alpha","Kilo",27);
+    alpha.car = car1;
+    std::cout << alpha.car.getMake() << ", " << alpha.car.getModel() << "\n";
+
+    isCarCool(car1);
     return 0;
 }
 
-void isCarCool(C c){
+void isCarCool(Car c){
     if(c.isCool()){
         std::cout << "COOL CAR!\n";
     }

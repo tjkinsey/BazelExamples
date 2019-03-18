@@ -16,3 +16,19 @@ UNIT TESTING NOTES:
     (ex. ln -s /usr/bin/GTEST/googleTestDir gTest)
 
     note that the junit dependency needs to be a .jar for bazel to recognize it.
+
+    I also made a .bazelrc file in my home directory with helpful feedback for testing
+
+    $ cd ~
+    $ vim .bazelrc
+     add the following lines
+        test --test_verbose_timeout_warnings
+
+        test --test_output=all
+    save and close
+
+    in order for these changes to take affect go to your bazel directory and enter
+
+    $ bazel clean; bazel shutdown
+    
+    Then the next time you run "bazel test ..." you will see the new output.

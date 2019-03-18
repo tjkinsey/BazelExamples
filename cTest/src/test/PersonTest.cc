@@ -1,9 +1,9 @@
 #include "gtest/gtest.h"
-#include "../main/B.h"
+#include "../main/Person.h"
 
 //create B objects to test
-B b("Alpha","Kilo",27);
-B b1("Beta", "Gamma", 1000);
+Person b("Alpha","Kilo",27);
+Person b1("Beta", "Gamma", 1000);
 
 TEST(BTest, getFirstName){
     EXPECT_EQ("Alpha", b.getFirstName());
